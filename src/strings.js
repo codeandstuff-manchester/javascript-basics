@@ -1,25 +1,37 @@
-function sayHello (string) {
-  // your code here
+const sayHello = (word) => {
+  if (typeof word === 'string'){
+    return 'Hello, ' + word + '!';
+  }
 };
 
-function uppercase (string) {
-  // your code here
+const uppercase = (upperWord) => {
+  if (typeof upperWord === 'string'){
+    return upperWord.toUpperCase();
+  }
 };
 
-function lowercase (string) {
-  // your code here
+const lowercase = (lowerWord) => {
+  if (typeof lowerWord === 'string'){
+    return lowerWord.toLowerCase();
+  }
 };
 
-function countCharacters (string) {
-  // your code here
+const countCharacters = (countWord) => {
+  if (typeof countWord === 'string'){
+    return countWord.length;
+  }
 };
 
-function firstCharacter (string) {
-  // your code here
+const firstCharacter = (firstAlp) => {
+  if (typeof firstAlp === 'string'){
+    return firstAlp[0];
+  }
 };
 
-function firstCharacters (string, n) {
-  // your code here
+const firstCharacters = (string, n) => {
+  if (typeof string === 'string'){
+    return string.slice(0, n);
+  }
 };
 
 module.exports = {
