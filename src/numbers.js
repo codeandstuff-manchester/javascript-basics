@@ -1,57 +1,80 @@
-function add (a, b) {
-  // your code here
+const add = (a, b) => {
+  if (typeof a === 'number' && typeof b === 'number'){
+    return a + b;
+  }
+};
+
+const subtract = (a, b) => {
+  if (typeof a === 'number' && typeof b === 'number'){
+    return a - b;
+  }
+};
+
+const multiply = (a, b) => {
+  if (typeof a === 'number' && typeof b === 'number'){
+    return a * b;
+  }
+};
+const divide = (a, b) => {
+  if (typeof a === 'number' && typeof b === 'number'){
+    return a / b;
+  }
 }
 
-function subtract (a, b) {
-  // your code here
+const power = (a, b) => {
+  if (typeof a === 'number' && typeof b === 'number'){
+    return a ** b;
+  }
 }
 
-function multiply (a, b) {
-  // your code here
+const round = (a) => {
+  if (typeof a === 'number'){
+    return Math.round(a);
+  }
 }
 
-function divide (a, b) {
-  // your code here
+const roundUp = (a) => {
+  if (typeof a === 'number'){
+    return Math.ceil(a);
+  }
 }
 
-function power (a, b) {
-  // your code here
+const roundDown = (a) => {
+  if (typeof a === 'number'){
+    return Math.floor(a);
+  }
 }
 
-function round (a) {
-  // your code here
+const absolute = (a) => {
+  if (typeof a === 'number'){
+    return Math.abs(a);
+  }
 }
 
-function roundUp (a) {
-  // your code here
+const quotient = (a, b) => {
+  if (typeof a === 'number' && typeof b === 'number' && a >= 0){
+    return Math.floor(a / b);
+  }else if (typeof a === 'number' && typeof b === 'number' && a < 0){
+    return Math.ceil(a / b);
+  }
 }
 
-function roundDown (a) {
-  // your code here
-}
-
-function absolute (a) {
-  // your code here
-}
-
-function quotient (a, b) {
-  // your code here
-}
-
-function remainder (a, b) {
-  // your code here
+const remainder = (a, b) => {
+  if (typeof a === 'number' && typeof b === 'number'){
+    return a % b;
+  }
 }
 
 module.exports = {
-  add,
-  subtract,
-  multiply,
-  divide,
-  power,
-  round,
-  roundUp,
-  roundDown,
-  absolute,
-  quotient,
-  remainder
+add,
+subtract,
+multiply,
+divide,
+power,
+round,
+roundUp,
+roundDown,
+absolute,
+quotient,
+remainder 
 }
