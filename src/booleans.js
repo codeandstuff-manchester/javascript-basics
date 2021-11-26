@@ -1,61 +1,134 @@
-function negate(a) {
-  // your code here
+const negate = (a) => {
+  if (typeof a === 'boolean'){
+    return !a;
+  }
 };
 
-function both(a, b) {
-  // your code here
+const both = (a, b) => {
+  if (a === true && b === true){
+    return true;
+  }else if(a === true && b === false){
+    return false;
+  }else if (a === false && b === true){
+    return false;
+  }else{
+    return false;
+  }
 };
 
-function either(a, b) {
-  // your code here
+const either = (a, b) => {
+  if (a === true || b === true){
+    return true;
+  }else if (a === false || b === false){
+    return false;
+  }
 };
 
-function none(a, b) {
-  // your code here
+const none = (a, b) => {
+  if (a === true && b === true){
+    return false;
+  }else if(a === true && b === false){
+    return false;
+  }else if (a === false && b === true){
+    return false;
+  }else{
+    return true;
+  }
 };
 
-function one(a, b) {
-  // your code here
+const one = (a, b) => {
+  if (a === true && b === true){
+    return false;
+  }else if(a === true && b === false){
+    return true;
+  }else if (a === false && b === true){
+    return true;
+  }else{
+    return false;
+  }
 };
 
-function truthiness(a) {
-  // your code here
+const truthiness = (a) => {
+  if(a){
+    return true;
+  }else{
+    return false;
+  }
 };
 
-function isEqual(a, b) {
-  // your code here
+const isEqual = (a, b) => {
+  if (a === b){
+    return true;
+  }else{
+    return false;
+  }
 };
 
-function isGreaterThan(a, b) {
-  // your code here
+const isGreaterThan = (a, b) => {
+  if (a > b){
+    return true;
+  }else{
+    return false;
+  }
 };
 
-function isLessThanOrEqualTo(a, b) {
-  // your code here
+const isLessThanOrEqualTo = (a, b) => {
+  if (a <= b){
+    return true;
+  }else{
+    return false;
+  }
 };
 
-function isOdd(a) {
-  // your code here
+const isOdd = (a) => {
+  if (a % 2 === 1){
+    return true;
+  }else{
+    return false;
+  }
 };
 
-function isEven(a) {
-  // your code here
+const isEven = (a) => {
+  if (a % 2 === 0){
+    return true;
+  }else{
+    return false;
+  }
 };
 
-function isSquare(a) {
-  // your code here
+const isSquare = (a) => {
+  if (a >=0 && Math.sqrt(a) % 1 === 0){
+    return true;
+  }else{
+    return false;
+  }
 };
 
-function startsWith(char, string) {
-  // your code here
+const startsWith = (char, string) => {
+  if (string.startsWith(char) === true){
+    return true;
+  }else{
+    return false;
+  }
 };
 
-function containsVowels(string) {
-  // your code here
+const containsVowels = (string) => {
+  const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+  
+  for (let i = 0; i < string.length; i++){
+    if (vowels.includes(string[i])){
+      return true;
+    }
+  }
+  return false;
 };
 
-function isLowerCase(string) {
-  // your code here
+const isLowerCase = (string) => {
+  if (string === string.toLowerCase()){
+    return true;
+  }else{
+    return false;
+  }
 };
 
 module.exports = {
