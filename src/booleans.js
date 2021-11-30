@@ -1,62 +1,98 @@
-function negate(a) {
-  // your code here
-};
+const negate = (a) => !a;
 
-function both(a, b) {
-  // your code here
-};
+const both = (a, b) => {
+  if (!a || !b) {
+    return false;
+  }
+  return true;
+}
 
-function either(a, b) {
-  // your code here
-};
+const either = (a, b) => {
+  if (a || b) {
+    return true;
+  }
+  return false;
+}
+const none = (a, b) => {
+  if (a || b) {
+    return false;
+  }
+  return true;
+}
 
-function none(a, b) {
-  // your code here
-};
+const one = (a, b) => {
+  if ((a && !b) || (b && !a)) {
+    return true;
+  }
+  return false;
+}
 
-function one(a, b) {
-  // your code here
-};
+const truthiness = (a) => {
+  if(a){
+    return true;
+  }
+    return false;
+  }
 
-function truthiness(a) {
-  // your code here
-};
+const isEqual = (a, b) => {
+  if (a === b){
+    return true;
+  }
+    return false;
+  }
 
-function isEqual(a, b) {
-  // your code here
-};
 
-function isGreaterThan(a, b) {
-  // your code here
-};
+const isGreaterThan = (a, b) => {
+  if (a > b){
+    return true;
+  }
+    return false;
+  }
 
-function isLessThanOrEqualTo(a, b) {
-  // your code here
-};
+const isLessThanOrEqualTo = (a, b) => {
+  if (a <= b){
+    return true;
+  }
+    return false;
+  }
 
-function isOdd(a) {
-  // your code here
-};
+const isOdd = (a) => {
+  if (a % 2 === 1){
+    return true;
+  }
+    return false;
+  }
 
-function isEven(a) {
-  // your code here
-};
+const isEven = (a) => {
+  if (a % 2 === 0){
+    return true;
+  }
+    return false;
+  }
 
-function isSquare(a) {
-  // your code here
-};
+const isSquare = (a) => {
+  if (Math.sqrt(a) % 1 === 0){
+    return true;
+  }
+    return false;
+  }
 
-function startsWith(char, string) {
-  // your code here
-};
+const startsWith = (char, string) => {
+  if (string.startsWith(char) === true){
+    return true;
+  }
+    return false;
+  }
 
-function containsVowels(string) {
-  // your code here
-};
 
-function isLowerCase(string) {
-  // your code here
-};
+const containsVowels = (string) => /[aeiou]/gi.test(string);
+
+const isLowerCase = (string) => {
+  if (string === string.toLowerCase()){
+    return true;
+  }
+    return false;
+  }
 
 module.exports = {
   negate,
