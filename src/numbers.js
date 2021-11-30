@@ -1,69 +1,24 @@
-const add = (a, b) => {
-  if (typeof a === 'number' && typeof b === 'number'){
-    return a + b;
-  }
-};
+const add = (a, b) => a + b;
 
-const subtract = (a, b) => {
-  if (typeof a === 'number' && typeof b === 'number'){
-    return a - b;
-  }
-};
+const subtract = (a, b) => a - b;
 
-const multiply = (a, b) => {
-  if (typeof a === 'number' && typeof b === 'number'){
-    return a * b;
-  }
-};
-const divide = (a, b) => {
-  if (typeof a === 'number' && typeof b === 'number'){
-    return a / b;
-  }
-}
+const multiply = (a, b) => a * b;
 
-const power = (a, b) => {
-  if (typeof a === 'number' && typeof b === 'number'){
-    return a ** b;
-  }
-}
+const divide = (a, b) => a / b;
 
-const round = (a) => {
-  if (typeof a === 'number'){
-    return Math.round(a);
-  }
-}
+const power = (a, b) => a ** b;
 
-const roundUp = (a) => {
-  if (typeof a === 'number'){
-    return Math.ceil(a);
-  }
-}
+const round = (a) => Math.round(a);
 
-const roundDown = (a) => {
-  if (typeof a === 'number'){
-    return Math.floor(a);
-  }
-}
+const roundUp = (a) => Math.ceil(a);
 
-const absolute = (a) => {
-  if (typeof a === 'number'){
-    return Math.abs(a);
-  }
-}
+const roundDown = (a) => Math.floor(a);
 
-const quotient = (a, b) => {
-  if (typeof a === 'number' && typeof b === 'number' && a >= 0){
-    return Math.floor(a / b);
-  }else if (typeof a === 'number' && typeof b === 'number' && a < 0){
-    return Math.ceil(a / b);
-  }
-}
+const absolute = (a) => Math.abs(a);
 
-const remainder = (a, b) => {
-  if (typeof a === 'number' && typeof b === 'number'){
-    return a % b;
-  }
-}
+const quotient = (a, b) => Math.trunc(a / b);
+
+const remainder = (a, b) => a % b;
 
 module.exports = {
 add,
